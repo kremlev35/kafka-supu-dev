@@ -1,0 +1,142 @@
+{
+  "data": [
+    {
+      "serviceId": "1",
+      "provider": {
+        "id": "1",
+        "name": "test provider",
+        "inn": "123456789010"
+      },
+      "isActive": true,
+      "isOnTest": true,
+      "operationCode": "1",
+      "name": "test_1",
+      "shortName": "t_1",
+      "description": "test provider service is operation code 1",
+      "tags": [
+        "test",
+        "1"
+      ],
+      "receiver": {
+        "account": "20000000001000000000",
+        "bank": {
+          "name": "test bank",
+          "corAccount": "20000000001000000000",
+          "bic": "123456789",
+          "kpp": "123456789"
+        }
+      },
+      "actions": {
+        "isPaymentAllowed": true,
+        "isTemplateCreationAllowed": false,
+        "isAutopaymentByDateAllowed": false,
+        "isRemindAllowed": false
+      },
+      "invoiceEnabled": true,
+      "categoryIds": [
+        "01",
+        "02"
+      ],
+      "regionIds": [
+        "00"
+      ],
+      "channels": {
+        "isMobileBankOn": true,
+        "isInternetBankOn": true,
+        "isAtmBankOn": true
+      }
+    },
+    {
+      "serviceId": "2",
+      "provider": {
+        "id": "1",
+        "name": "test provider",
+        "inn": "123456789010"
+      },
+      "isActive": true,
+      "isOnTest": true,
+      "operationCode": "2",
+      "name": "test_2",
+      "shortName": "t_2",
+      "description": "test provider service is operation code 2",
+      "tags": [
+        "test",
+        "2"
+      ],
+      "receiver": {
+        "account": "20000000001000000000",
+        "bank": {
+          "name": "test bank",
+          "corAccount": "20000000001000000000",
+          "bic": "123456789",
+          "kpp": "123456789"
+        }
+      },
+      "actions": {
+        "isPaymentAllowed": true,
+        "isTemplateCreationAllowed": false,
+        "isAutopaymentByDateAllowed": false,
+        "isRemindAllowed": false
+      },
+      "invoiceEnabled": true,
+      "categoryIds": [
+        "01",
+        "02"
+      ],
+      "regionIds": [
+        "00"
+      ],
+      "channels": {
+        "isMobileBankOn": true,
+        "isInternetBankOn": true,
+        "isAtmBankOn": true
+      }
+    },
+    {
+      "serviceId": "3",
+      "provider": {
+        "id": "1",
+        "name": "test provider",
+        "inn": "123456789010"
+      },
+      "isActive": true,
+      "isOnTest": true,
+      "operationCode": "3",
+      "name": "test_3",
+      "shortName": "t_3",
+      "description": "test provider service is operation code 3",
+      "tags": [
+        "test",
+        "3"
+      ],
+      "receiver": {
+        "account": "20000000001000000000",
+        "bank": {
+          "name": "test bank",
+          "corAccount": "20000000001000000000",
+          "bic": "123456789",
+          "kpp": "123456789"
+        }
+      },
+      "actions": {
+        "isPaymentAllowed": true,
+        "isTemplateCreationAllowed": false,
+        "isAutopaymentByDateAllowed": false,
+        "isRemindAllowed": false
+      },
+      "invoiceEnabled": true,
+      "categoryIds": [
+        "01",
+        "02"
+      ],
+      "regionIds": [
+        "00"
+      ],
+      "channels": {
+        "isMobileBankOn": true,
+        "isInternetBankOn": true,
+        "isAtmBankOn": true
+      }
+    }
+  ]
+}
