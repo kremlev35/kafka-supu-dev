@@ -12,5 +12,14 @@
 ## Пример запроса для добавления услуг ПУ в kafka
 - Расположение примера запроса: [файл](/documentation/request/add-provider-services-dto-rq.json)
 
+## Работа с запросами
+- При инициализации kafka producer формат bootstrapServers должен быть <хост>:<порт>. Порт длинною 4 цифры
+- При инициализации kafka producer если нужно SSL подключение необходимо указать все 4 параметра: 
+  - **key-store-password**
+  - **key-store-location**
+  - **trust-store-password**
+  - **trust-store-location**
+-  Для полей <...>-location необходимо указать полный путь до файла **<...>.jks**
+
 ### Для разработчиков
 - Для создания нового jar использовать команду **gradle bootJar**
