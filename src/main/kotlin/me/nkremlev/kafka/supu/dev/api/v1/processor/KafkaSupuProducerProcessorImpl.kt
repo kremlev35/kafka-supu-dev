@@ -43,7 +43,8 @@ class KafkaSupuProducerProcessorImpl(
             addSendProps(SslConfigs.SSL_KEYSTORE_LOCATION_CONFIG, keyStoreLocation)
             addSendProps(SslConfigs.SSL_TRUSTSTORE_PASSWORD_CONFIG, trustStorePassword)
             addSendProps(SslConfigs.SSL_TRUSTSTORE_LOCATION_CONFIG, trustStoreLocation)
-            addSendProps(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG, "SSL")
+            if (!keyStorePassword.isNullOrEmpty())
+                addSendProps(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG, "SSL")
 
             kafkaTemplate = KafkaTemplate(DefaultKafkaProducerFactory(senderProps))
             return ResponseEntity(ResponseDto.success(), HttpStatus.OK)
