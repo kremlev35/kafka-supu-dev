@@ -6,6 +6,7 @@ import me.nkremlev.kafka.supu.dev.api.common.dto.ResponseDto
 import me.nkremlev.kafka.supu.dev.exception.ValidationException
 import me.nkremlev.kafka.supu.dev.service.ValidationService
 import me.nkremlev.kafka.supu.dev.util.log.Loggable
+import org.apache.kafka.clients.CommonClientConfigs
 import org.apache.kafka.clients.producer.ProducerConfig
 import org.apache.kafka.common.config.SslConfigs
 import org.apache.kafka.common.serialization.StringSerializer
@@ -42,6 +43,7 @@ class KafkaSupuProducerProcessorImpl(
             addSendProps(SslConfigs.SSL_KEYSTORE_LOCATION_CONFIG, keyStoreLocation)
             addSendProps(SslConfigs.SSL_TRUSTSTORE_PASSWORD_CONFIG, trustStorePassword)
             addSendProps(SslConfigs.SSL_TRUSTSTORE_LOCATION_CONFIG, trustStoreLocation)
+            addSendProps(CommonClientConfigs.SECURITY_PROTOCOL_CONFIG, "SSL")
 
             kafkaTemplate = KafkaTemplate(DefaultKafkaProducerFactory(senderProps))
             return ResponseEntity(ResponseDto.success(), HttpStatus.OK)
